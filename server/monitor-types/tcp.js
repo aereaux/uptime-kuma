@@ -169,7 +169,7 @@ class TCPMonitorType extends MonitorType {
                 log.debug(this.name, `[${monitor.name}] Pre-TLS timed out waiting for banner`);
                 // No banner. Could be a XMPP server?
                 socket_.write(
-                    `<stream:stream to='${monitor.hostname}' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>`
+                    `<stream:stream to='jmad.org' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>`
                 );
             };
 
